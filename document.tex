@@ -19,5 +19,25 @@
 	\begin{lstlisting}
 		sudo apt-get install vim
 	\end{lstlisting}
+	\subsection{Modos de operação}
+	O diferencial do Vim são seus modos, que permitem ao usuário realizar operações rapidamente. São eles:
+		\subsubsection{Modo Normal}
+		O modo mais utilizado, tem a função de \emph{formatar, copiar, mover cursor, etc.} Nele, podemos mover o cursor com as teclas \emph{h} (esquerda), \emph{j} (baixo), \emph{k} (cima), \emph{l} (direita).
+		\begin{itemize}
+			\item Se digitar \textbf{$n$j}, desce \emph{n} linhas;
+			\item Se digitar \textbf{$n$l}, avança \emph{n} caracteres à direita;
+			\item Se digitar \textbf{w}, move para o começo da palavra;
+			\item Se digitar \textbf{b}, move para o começo da palavra anterior;
+			\item Se digitar \textbf{e}, move para o final da palavra;
+			\item Se digitar \textbf{0}, move para o começo da linha;
+			\item Se digitar \textbf{\$}, move para o final da linha.	
+		\end{itemize} 
+		Além disso, temos os seguintes comandos:
+		\begin{itemize}
+			\item Se digitar \textbf{r} em cima de um caractere, pode substituí-lo por outro;
+			\item Se digitar \textbf{x} em cima de um caractere, apaga-o;
+			\item Se digitar \textbf{u}, desfaz todas as suas alterações e restaura o documento até a última vez que entrou no \emph{normal mode};
+			\item Para refazer mudanças causadas pelo \textbf{u}, insira \textbf{ctrl + r}.
+		\end{itemize}
 
 \end{document}
