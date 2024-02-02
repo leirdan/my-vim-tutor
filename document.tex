@@ -39,5 +39,21 @@
 			\item Se digitar \textbf{u}, desfaz todas as suas alterações e restaura o documento até a última vez que entrou no \emph{normal mode};
 			\item Para refazer mudanças causadas pelo \textbf{u}, insira \textbf{ctrl + r}.
 		\end{itemize}
-
+		\subsubsection{Modo de Inserção}
+		O modo de inserção é autoexplicativo: faz o VIM comportar-se como um editor de texto simples, permitindo escrever e editar arquivos. Podemos entrar neste modo das seguintes formas:
+		\begin{itemize}
+			\item No modo normal, teclando \emph{i} começa a editar de onde o cursor está parado;
+			\begin{itemize}
+				\item Teclando \emph{I} começa a editar do começo da linha;
+			\end{itemize}
+			\item No modo normal, teclando \emph{a} começa a editar um caractere após o caractere atual (muito útil para inserir textos após o fim de uma frase);
+			\begin{itemize}
+				\item Teclando \emph{A} começa a editar a partir do final da linha;
+			\end{itemize}
+			\item No modo normal, teclando \emph{o} insere uma nova linha abaixo da atual e edita a partir do começo desta nova.
+			\begin{itemize}
+				\item Teclando \emph{O} insere uma nova linha acima da atual e edita a partir do começo desta nova.
+			\end{itemize}
+		\end{itemize}
+		Para sair do modo de inserção, tecle \emph{esc}.
 \end{document}
