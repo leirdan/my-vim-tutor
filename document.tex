@@ -63,4 +63,23 @@
 			\item Pressionar \emph{V} permite fazer a seleção de uma linha inteira ou mais;
 			\item Pressionar \emph{ctrl + v} permite selecionar uma região retangular no texto e ao longo das linhas que quiser.  
 		\end{itemize}
+		\subsubsection{Modo de Comando}
+		Um dos modos mais poderosos do VIM, provê funcionalidades que o modo normal não consegue, como a execução de comandos específicos e externos ao editor. Para entrar neste modo, basta estar no modo normal e teclar ":". 
+	\newpage
+
+	\section{Editando}
+		\subsection{Abrir arquivo}
+		Para abrir um arquivo no editor VIM, basta digitar:
+		\begin{lstlisting}
+			vim [nome do arquivo]
+		\end{lstlisting}
+		Se desejar abrir o arquivo em uma linha específica, pode-se usar:
+		\begin{lstlisting}
+			vim +42 [nome do arquivo]
+		\end{lstlisting}
+		para abrir na linha 42. \\
+		Caso esteja dentro de um arquivo e deseje abrir outro, pode-se inserir o seguinte comando no modo de comando:
+		\begin{lstlisting}
+			:e [nome do arquivo]
+		\end{lstlisting} 
 \end{document}
