@@ -67,22 +67,30 @@
 		Um dos modos mais poderosos do VIM, provê funcionalidades que o modo normal não consegue, como a execução de comandos específicos e externos ao editor. Para entrar neste modo, basta estar no modo normal e teclar ":". 
 	\newpage
 
-	\section{Editando}
-		\subsection{Abrir arquivo}
-		Para abrir um arquivo no editor VIM, basta digitar:
-		\begin{lstlisting}
-			vim [nome do arquivo]
-		\end{lstlisting}
-		Se desejar abrir o arquivo em uma linha específica, pode-se usar:
-		\begin{lstlisting}
-			vim +42 [nome do arquivo]
-		\end{lstlisting}
-		para abrir na linha 42. \\
-		Caso esteja dentro de um arquivo e deseje abrir outro, pode-se inserir o seguinte comando no modo de comando:
-		\begin{lstlisting}
-			:e [nome do arquivo]
-		\end{lstlisting} 
-		\subsection{Salvar/sair do arquivo}
-		Para salvar um arquivo no editor VIM, basta estar no modo de comando e digitar \textbf{:w}. \\
-		Para sair do arquivo, basta digitar no modo de comando \textbf{:q}. Se tiverem mudanças não salvas, pode-se digitar \textbf{:q} para sair de maneira forçada; caso queira salvar e sair, pode-se digitar \textbf{:wq!}. 
+\section{Editando}
+	\subsection{Abrir arquivo}
+	Para abrir um arquivo no editor VIM, basta digitar:
+	\begin{lstlisting}
+		vim [nome do arquivo]
+	\end{lstlisting}
+	Se desejar abrir o arquivo em uma linha específica, pode-se usar:
+	\begin{lstlisting}
+		vim +42 [nome do arquivo]
+	\end{lstlisting}
+	para abrir na linha 42. \\
+	Caso esteja dentro de um arquivo e deseje abrir outro, pode-se inserir o seguinte comando no modo de comando:
+	\begin{lstlisting}
+		:e [nome do arquivo]
+	\end{lstlisting} 
+	\subsection{Salvar/sair do arquivo}
+	Para salvar um arquivo no editor VIM, basta estar no modo de comando e digitar \textbf{:w}. \\
+	Para sair do arquivo, basta digitar no modo de comando \textbf{:q}. Se tiverem mudanças não salvas, pode-se digitar \textbf{:q} para sair de maneira forçada; caso queira salvar e sair, pode-se digitar \textbf{:wq!}. 
+	\subsection{Copiar textos}
+	A letra \emph{y} está associada ao ato de \emph{copiar textos} no editor VIM. Assim, temos as seguintes possibilidades:
+	\begin{itemize}
+		\item Pressionar \emph{yy} ou \emph{Y} copia a linha atual inteira;
+		\item Pressionar \emph{ye} copia do cursor ao fim da palavra;
+		\item Pressionar \emph{yb} copia do cursor ao começo da palavra;
+		\item Note que as letras \emph{e} e \emph{b} que acompanham o comando \emph{y} são as teclas vistas na seção do Modo Normal.
+	\end{itemize}
 \end{document}
