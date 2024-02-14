@@ -93,4 +93,21 @@
 		\item Pressionar \textbf{yb} copia do cursor ao começo da palavra;
 		\item Note que as letras \textbf{e} e \textbf{b} que acompanham o comando \textbf{y} são as teclas vistas na seção do \emph{normal mode}.
 	\end{itemize}
+	\subsection{Deletar textos}
+	A letra \textbf{d} está associada ao ato de \emph{deletar textos} removendo-os para a memória, enquanto a tecla \textbf{x}  é associada ao ato de \emph{excluir uma letra} no editor VIM. Assim, temos as seguintes possibilidades:
+	\begin{itemize}
+		\item Pressionar \textbf{x} remove a letra sob o cursor;
+		\item Pressionar \textbf{nx} remove \emph{n} letras após o cursor;
+		\item Pressionar \textbf{dnx} remove as \emph{n} próximas letras da linha;
+		\item Pressionar \textbf{dd} remove a linha atual;
+		\item Pressionar \textbf{d0} apaga do cursor ao início da linha;
+		\item Pressionar \textbf{D} apaga do cursor ao fim da linha;
+		\item Pressionar \textbf{dnd} remove as \emph{n} próximas linhas;
+		\item Pressionar \textbf{dw} apaga os caracteres sob o cursor até o próximo espaço em branco;
+		\item Pressionar \textbf{dnw} apaga as \emph{n} palavras após o cursor até o próximo espaço em branco;
+		\item Pressionar \textbf{dgg} apaga da linha atual ao início do arquivo;
+		\item Pressionar \textbf{dG} apaga da linha atual ao fim do arquivo;
+		\item Pressionar \textbf{dfA} apaga do cursor até o próximo A, por exemplo. Para excluir até outro caractere, insira outra letra.
+	\end{itemize}
+	Note que todos os comandos de deleção ou cópia, independente dos seus efeitos, movem o conteúdo para a memória.
 \end{document}
