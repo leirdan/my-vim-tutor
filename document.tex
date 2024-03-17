@@ -117,4 +117,16 @@
 	Note que todos os comandos de deleção ou cópia, independente dos seus efeitos, movem o conteúdo para a memória.
 	\subsection{Colar textos}
 	Para colar um texto movido para a memória, basta pressionar \textbf{p} (para copiar abaixo da linha atual) ou \textbf{P} (para copiar acima da linha atual).
+	\subsection{Ordenação de linhas}
+	O VIM tem um comando para ordenar linhas de um arquivo, o \textbf{sort}. Ele é usado no \emph{command mode} da seguinte maneira:
+	\begin{lstlisting}
+		:sort 
+	\end{lstlisting}
+	Podemos passar o parâmetro \textbf{u} para ordenar e retirar linhas duplicadas, ou \textbf{n} para ordenar numericamente. \\
+	Ainda temos a seguinte possibilidade:
+	\begin{lstlisting}
+		:24,42 sort u
+	\end{lstlisting}
+	para ordenar somente as linhas do intervalo 24 a 42 (ou o intervalo que decidir). \\
+	\textbf{Cuidado!} Usar o \emph{sort} no seu arquivo de maneira indevida vai bagunçá-lo por inteiro.
 \end{document}
